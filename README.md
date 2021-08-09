@@ -17,5 +17,5 @@ Este é meu teste enviado pela Lemoney.
 - O banco de dados está rodando em um servidor meu, caso seja obrigatório na AWS, eu posso rodar um RDS pra isso, não fiz por questão de cobrança;
 
 
-## Para ajudas
+## Para ajuda
 - pode entrar em contato comigo `gabrielbaroni1@gmail.com`;
