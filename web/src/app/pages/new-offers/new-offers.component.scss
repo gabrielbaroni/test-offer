@@ -1,0 +1,28 @@
+.card {
+  background-color: #ccc;
+
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  input[type="checkbox"]{
+    padding: 5px !important;
+  }
+
+  input[type="text"],
+  input[type="checkbox"],
+  textarea {
+    border: 2px solid #666;
+  }
+
+  .btn-default-2{
+    background-color: #b6b6b6;
+    border: 2px solid #666;
+  }
+}
+
+.font-error{
+  font-size: 11px;
+  color: red;
+}

@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row mt100">
+        <div class="col-md-8 offset-2">
+            <a [routerLink]="['/home']"><i class="fas fa-arrow-alt-circle-left"></i> Back to home</a>
+
+            <table class="table table-striped mt20">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>url</th>
+                        <th>status</th>
+                        <th>actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let offer of offers">
+                        <td>{{ offer.id }}</td>
+                        <td>{{ offer.name }}</td>
+                        <td>{{ offer.url }}</td>
+                        <td>
+                            <div class="" *ngIf="offer.status"><span class="badge badge-success">enabled</span></div>
+                            <div class="" *ngIf="!offer.status"><span class="badge badge-danger">disabled</span></div>
+                        </td>
+                        <td>
+                            <a type="button" [routerLink]="['edit', offer?.id]" class="btn btn-default btn-sm" title="Edit"><i class="fas fa-edit"></i></a>
+                            <button type="button" class="btn btn-default btn-sm" title="Disable/Enable" (click)="onUpdateStatus(offer?.id, offer?.status)"><i class="fas fa-sync-alt"></i></button>
+                            <button type="button" class="btn btn-default btn-sm" title="Remove" (click)="onRemove(offer?.id)"><i class="fas fa-trash-alt"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
