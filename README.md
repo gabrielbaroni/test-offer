@@ -15,6 +15,7 @@ Este é meu teste enviado pela Lemoney.
 
 ## Banco de dados
 - O banco de dados está rodando em um servidor meu, caso seja obrigatório na AWS, eu posso rodar um RDS pra isso, não fiz por questão de cobrança;
+- api/src/database/database.module.ts
 
 ## Configuração
 - O arquivo .env está a parte e anexado no zip, que foi enviado para o e-mail, pois o respositório está como público.
